@@ -1,5 +1,5 @@
 :root { 
-    --cor-de-fundo: #1E1E1E; 
+    --cor-de-fundo: #d65e5e; 
     --verde: #6FFF57;
     --branco: #FFFFFF; 
     --botao-ativo: #3A375E; 
@@ -7,7 +7,7 @@
     --texto-fundo: rgba(58, 55, 94, 0.3); 
 }
 
-@import url(‘https://fonts.googleapis.com/ css2?family=Chakra+Petch:wght@400;700&display=swap’);
+@import url(‘https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap’);
 
 body {
     background-color: var(--cor-de-fundo);
@@ -43,5 +43,25 @@ body {
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
-
 }
+.botoes { 
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) 
+    { .botoes { display: flex;
+    }
+    }
+    .botao:first-child { border-radius: 40px 0 0 0;
+    }
+    
+    .botao:last-child { border-radius: 0 40px 0 0;
+    }
+    .ativo{
+        background-color: var(--botao-ativo);
+        border-bottom: 4px solid var(--verde);
+        }
+
+        .abas-textos{
+            background-color:var(--texto-fundo);
+        }
